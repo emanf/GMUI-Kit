@@ -25,6 +25,7 @@ List of Control in Last Version:
 
 Button:(Property)
 =================
+<pr>
 <br>ControlType   // Don't Change.(ReadOnly)
 <br>Text;         // (String)
 <br>Text_Color;   // (Color)
@@ -32,7 +33,7 @@ Button:(Property)
 <br>Font;         // (Font). Sets the font. Use -1 to set the default font (Arial 12)
 <br>Font_Halign   // Sets the horizontal alignment. Choose one of: fa_left , fa_center , fa_right
 <br>Font_Valign   // Sets the vertical alignment. Choose one of: fa_top , fa_middle , fa_bottom
-
+</pr>
 CheckBox:(Property)
 ===================
 <br>ControlType   // Don't Change.(ReadOnly)
