@@ -24,7 +24,7 @@ List of Control in Last Version:
 
 
 Button: Property
-{
+
   ControlType   // Don't Change.(ReadOnly)
   Text;         // (String)
   Text_Color;   // (Color)
@@ -32,10 +32,10 @@ Button: Property
   Font;         // (Font). Sets the font. Use -1 to set the default font (Arial 12)
   Font_Halign   // Sets the horizontal alignment. Choose one of: fa_left , fa_center , fa_right
   Font_Valign   // Sets the vertical alignment. Choose one of: fa_top , fa_middle , fa_bottom
-}
+
 
 CheckBox: Property
-{
+
   ControlType   // Don't Change.(ReadOnly)
   Text;         // String
   Text_Color;   // Color
@@ -46,10 +46,10 @@ CheckBox: Property
   Checked       // ture or false
   xMove         // Left Margin for Text.
   yMove         // Top  Margin for Text.
-}
+
 
 Label: Property
-{
+
   ControlType         // Don't Change.(ReadOnly)
   Text;               // (String)
   Text_Color;         // (Color)
@@ -58,10 +58,10 @@ Label: Property
   Font_Halign         // Sets the horizontal alignment. Choose one of: fa_left , fa_center , fa_right
   Font_Valign         // Sets the vertical alignment. Choose one of: fa_top , fa_middle , fa_bottom
   String_Width_Limit  // Set Limit Width For Label. Example: set 50 ("TestTestTestTest" -> "TestTes...")
-}
+
 
 TextBox: Property
-{
+
   ControlType         // Don't Change.(ReadOnly)
   Text;               // (String)
   Text_Color;         // (Color)
@@ -75,13 +75,13 @@ TextBox: Property
   Font;               // (Font). Sets the font. Use -1 to set the default font (Arial 12)
   Font_Halign         // Sets the horizontal alignment. Choose one of: fa_left , fa_center , fa_right
   Font_Valign         // Sets the vertical alignment. Choose one of: fa_top , fa_middle , fa_bottom
-}
+
 
 ListBox:(Property, Function)
 ========
 
 ListBox: Property
-{
+
   ControlType       // Don't Change.(ReadOnly)
   SelectedItemIndex // Index of Item is Selected.
   SelectedItemText  // Text of Item is Selected.
@@ -96,7 +96,7 @@ ListBox: Property
   Font_Valign       // Sets the vertical alignment. Choose one of: fa_top , fa_middle , fa_bottom
   xMove             // Left and Right Margin for Text.
   yMove             // Top and Bottom Margin for Text.
-}
+
 
 ListBox: Function
 1. ListBox_AddItem (obj ListBox, str Item)
