@@ -25,7 +25,7 @@ List of Control in Last Version:
 
 Button:(Property)
 =================
-  ControlType   // Don't Change.(ReadOnly)
+  ControlType   // Don't Change.(ReadOnly)<br>
   Text;         // (String)
   Text_Color;   // (Color)
   Text_Alpha;   // (Number) between 0-1
