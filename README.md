@@ -93,7 +93,7 @@ Property:
 <br>yMove             // Top and Bottom Margin for Text.
 
 Function:
-1. ListBox_AddItem (obj ListBox, str Item)
-2. ListBox_RemoveItem (obj ListBox, int Index)
-3. ListBox_ChangeItemData (obj ListBox, int Index,str Value)
-4. ListBox_SelectIndex (obj ListBox, int Index)
+<br>1. ListBox_AddItem (obj ListBox, str Item)
+<br>2. ListBox_RemoveItem (obj ListBox, int Index)
+<br>3. ListBox_ChangeItemData (obj ListBox, int Index,str Value)
+<br>4. ListBox_SelectIndex (obj ListBox, int Index)
