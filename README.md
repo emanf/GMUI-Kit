@@ -23,10 +23,8 @@ List of Control in Last Version:
 5. ListBox
 
 
-Button:
-=======
-Button: Property
-
+Button:(Property)
+=================
   ControlType   // Don't Change.(ReadOnly)
   Text;         // (String)
   Text_Color;   // (Color)
@@ -35,10 +33,8 @@ Button: Property
   Font_Halign   // Sets the horizontal alignment. Choose one of: fa_left , fa_center , fa_right
   Font_Valign   // Sets the vertical alignment. Choose one of: fa_top , fa_middle , fa_bottom
 
-CheckBox:
-=========
-CheckBox: Property
-
+CheckBox:(Property)
+===================
   ControlType   // Don't Change.(ReadOnly)
   Text;         // String
   Text_Color;   // Color
@@ -50,10 +46,8 @@ CheckBox: Property
   xMove         // Left Margin for Text.
   yMove         // Top  Margin for Text.
 
-Label:
-======
-Label: Property
-
+Label:(Property)
+================
   ControlType         // Don't Change.(ReadOnly)
   Text;               // (String)
   Text_Color;         // (Color)
@@ -63,10 +57,8 @@ Label: Property
   Font_Valign         // Sets the vertical alignment. Choose one of: fa_top , fa_middle , fa_bottom
   String_Width_Limit  // Set Limit Width For Label. Example: set 50 ("TestTestTestTest" -> "TestTes...")
 
-TextBox:
-========
-TextBox: Property
-
+TextBox:(Property)
+==================
   ControlType         // Don't Change.(ReadOnly)
   Text;               // (String)
   Text_Color;         // (Color)
@@ -84,9 +76,6 @@ TextBox: Property
 
 ListBox:(Property, Function)
 ============================
-
-ListBox: Property
-
   ControlType       // Don't Change.(ReadOnly)
   SelectedItemIndex // Index of Item is Selected.
   SelectedItemText  // Text of Item is Selected.
@@ -102,9 +91,7 @@ ListBox: Property
   xMove             // Left and Right Margin for Text.
   yMove             // Top and Bottom Margin for Text.
 
-
-ListBox: Function
-1. ListBox_AddItem (obj ListBox, str Item)
-2. ListBox_RemoveItem (obj ListBox, int Index)
-3. ListBox_ChangeItemData (obj ListBox, int Index,str Value)
-4. ListBox_SelectIndex (obj ListBox, int Index)
+  1. ListBox_AddItem (obj ListBox, str Item)
+  2. ListBox_RemoveItem (obj ListBox, int Index)
+  3. ListBox_ChangeItemData (obj ListBox, int Index,str Value)
+  4. ListBox_SelectIndex (obj ListBox, int Index)
