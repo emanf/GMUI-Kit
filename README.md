@@ -2,7 +2,7 @@ GMUI-Kit
 ========
 
 Interface control components for Game Maker(http://yoyogames.com/)
-
+<img src="GMUI-Kit.png">
 
 How To Use?
 ===========
