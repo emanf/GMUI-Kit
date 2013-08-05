@@ -76,7 +76,7 @@ TextBox:(Property)
 
 ListBox:(Property, Function)
 ============================
-Property:
+<b>Property:</b>
 <br>ControlType       // Don't Change.(ReadOnly)
 <br>SelectedItemIndex // Index of Item is Selected.
 <br>SelectedItemText  // Text of Item is Selected.
@@ -92,7 +92,7 @@ Property:
 <br>xMove             // Left and Right Margin for Text.
 <br>yMove             // Top and Bottom Margin for Text.
 
-Function:
+<b>Function:</b>
 <br>1. ListBox_AddItem (obj ListBox, str Item)
 <br>2. ListBox_RemoveItem (obj ListBox, int Index)
 <br>3. ListBox_ChangeItemData (obj ListBox, int Index,str Value)
