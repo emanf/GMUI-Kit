@@ -3,6 +3,8 @@ GMUI-Kit
 
 Interface control components for Game Maker(http://yoyogames.com/)
 <img src="GMUI-Kit.png">
+<br>
+<b>License:</b> GPL v3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
 
 How To Use?
 ===========
