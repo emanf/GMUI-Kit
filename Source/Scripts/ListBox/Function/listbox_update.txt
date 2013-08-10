@@ -1,0 +1,53 @@
+/*#INDEX# =======================================================================================================================
+; Title .........:      Up to Date List Box.
+; GameMaker Version :   8+
+; Language ......:      English
+; Description ...:      ---
+; Author(s) .....:      eManF
+; Parameters .......:   (obj ListBox)
+; ===============================================================================================================================*/
+
+ListBox = argument0
+
+// Check Error
+if (is_string(ListBox) == 0) and instance_exists(ListBox)
+{
+    with(ListBox)
+    {
+        if variable_local_exists("control_type")   // Check object variable for type is Exist or not.
+        {
+            if (control_type != "ListBox")   // Check is real ListBox Object or Not.
+            {
+                return -3;
+            }
+        }
+        else
+        { 
+            return -2;
+        }
+    }
+}
+else
+{
+    return -1;
+}
+
+if (ListBox.size > 0)
+{
+    ListBox.selected_item_index = ListBox._start_index + ListBox._sel_index - 1
+}
+else
+{
+    ListBox.selected_item_index = -1
+}
+
+if (ListBox.selected_item_index >= 0)
+{
+    ListBox.selected_item_value = ds_list_find_value(ListBox.items, ListBox.selected_item_index)
+}
+else
+{
+    ListBox.selected_item_value = ""
+}
+
+return 1;

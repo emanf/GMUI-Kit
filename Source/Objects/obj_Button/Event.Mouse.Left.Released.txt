@@ -1,0 +1,6 @@
+///Click Event
+if (_enter == 1) and (_press == 1)
+{
+    // Do Someting After Click
+    
+}

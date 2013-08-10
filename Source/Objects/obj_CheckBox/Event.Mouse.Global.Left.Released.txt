@@ -1,0 +1,16 @@
+/// Click Event
+if (_enter == 1) and (_press == 1)
+{
+    if (checked)
+    {
+        checked = false
+    }
+    else
+    {
+        checked = true
+    }
+    // Put Your Code Here! //
+    // Do Something.
+    
+    
+}

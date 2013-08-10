@@ -1,0 +1,12 @@
+/// Leave Effect
+if (_enter == 1) exit;
+
+_enter_alpha -= 0.05
+if (_enter_alpha < 0)
+{
+    _enter_alpha = 0
+}
+else
+{
+    alarm[1] = 1
+}

@@ -1,0 +1,35 @@
+/// Properties
+control_type = "ListBox"            // Don't Change
+_start_index = 0                    // Don't Change
+_sel_index = 1                      // Don't Change
+//endIndex = SNum + startIndex - 1  // Don't Change
+key_on = true                       // Don't Change
+
+items = ds_list_create();           //Create List of Items.
+
+size = ds_list_size(items)          // Number of Items.
+show_number = 12                    // Number of Items to Show.
+
+focus = 0                           // Focus
+delay = 5                           // based of Room Speed for Keyboad Up&Down Key.
+
+// Font
+text_color = c_white
+text_alpha = 0.5
+font = -1                            //Sets the font. Use -1 to set the default font (Arial 12).
+font_halign = fa_left                //Sets the horizontal alignment. Choose one of: fa_left , fa_center , fa_right
+font_valign = fa_top                 //Sets the vertical alignment. Choose one of: fa_top , fa_middle , fa_bottom 
+
+// Set Font
+draw_set_font(font)
+draw_set_halign(font_halign)
+draw_set_valign(font_valign)
+
+x_move = 3
+y_move = 3
+height_item = string_height("A") + 2    // set Heigth of item in ListBox .if u wanna change it, so go to Draw Event and delete some code like this.
+width_item = sprite_width - x_move      // set Width of item in ListBox.
+
+//selected_item_index = 0
+//selected_item_value = ""
+listbox_update(id)                      // Set Default to 'SelectedItemIndex' Variable and 'SelectedItemText' Variable.

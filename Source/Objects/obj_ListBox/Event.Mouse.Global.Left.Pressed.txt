@@ -1,0 +1,6 @@
+/// lose Focus
+if !collision_point(mouse_x, mouse_y, id, 0, 0)
+{
+    focus = 0
+}
+listbox_update(id)

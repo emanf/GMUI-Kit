@@ -1,0 +1,20 @@
+/// Properties
+control_type = "Label"   // Dont Change!
+
+// Text
+text = "This is Label!"
+text_color = c_white
+text_alpha = 0.5
+
+// Font
+font = -1               // Sets the font. Use -1 to set the default font (Arial 12).
+font_halign = fa_left   // Sets the horizontal alignment. Choose one of: fa_left , fa_center , fa_right
+font_valign = fa_top    // Sets the vertical alignment. Choose one of: fa_top , fa_middle , fa_bottom 
+
+// Set Font
+draw_set_font(font)
+draw_set_halign(font_halign)
+draw_set_valign(font_valign)
+
+// other
+text_width_limit = 0

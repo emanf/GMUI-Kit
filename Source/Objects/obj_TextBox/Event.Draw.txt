@@ -1,0 +1,59 @@
+/// Draw
+draw_sprite(sprite_index,0,x,y)
+draw_set_alpha(1);
+draw_set_font(font)
+draw_set_halign(font_halign)
+draw_set_valign(font_valign)
+
+if (focus == 1)
+{
+    if keyboard_check_pressed(vk_enter) focus =0
+    if (_ch == 0)
+    {
+        keyboard_string = text
+        _ch = 1
+    }
+    if string_length(keyboard_string) > text_limit keyboard_string = string_copy(keyboard_string,0,text_limit)
+    if string_width(keyboard_string) > text_width_limit
+    {
+        for (i=string_length(keyboard_string); i>=0;i-=1)
+        {
+            _temp = string_copy(keyboard_string,0,i)
+            if string_width(_temp) <= text_width_limit
+            {
+                keyboard_string = _temp
+                break
+            }
+        }
+        
+    }
+    draw_text_color(x+x_move,y+y_move,keyboard_string+_caret,text_color, text_color, text_color, text_color, text_alpha)
+    text = keyboard_string
+    
+    if !collision_point(mouse_x, mouse_y, id, 0, 0)
+    {
+    if mouse_check_button_pressed(mb_left)
+        {
+            focus = 0
+            _ch = 0
+        }
+    }
+}
+else
+{
+    if collision_point(mouse_x, mouse_y, id, 0, 0)
+    {
+        //window_set_cursor(cr_beam)
+        if mouse_check_button_pressed(mb_left)
+        {
+            focus = 1
+            _ch = 0
+        }
+    }
+    else
+    {
+        //window_set_cursor(cr_arrow)
+    }
+    if (_ch != 0) _ch = 0
+    draw_text_color(x+x_move,y+y_move,text,text_color, text_color, text_color, text_color, text_alpha)
+}

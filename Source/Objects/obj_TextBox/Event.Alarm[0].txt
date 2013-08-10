@@ -1,0 +1,11 @@
+/// Caret Changer
+if (_caret == "")
+{
+    _caret = caret_char
+}
+else
+{
+    _caret = ""
+}
+
+alarm[0] = 15       //Change Caret every 15 step.

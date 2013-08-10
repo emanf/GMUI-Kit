@@ -1,0 +1,56 @@
+/// Draw ListBox
+draw_sprite(sprite_index,0,x,y)
+if (size ==0) exit;
+
+draw_set_font(font)
+draw_set_halign(font_halign)
+draw_set_valign(font_valign)
+height_item = string_height("A") + 2        // Delete this line if u change 'height_item' in Create Event.
+
+draw_set_alpha(1)
+
+if (show_number > size)
+{
+    n = size
+}
+else
+{
+    n = show_number
+}
+
+if (_start_index < 0)     _start_index = 0
+if (_sel_index < 1)       _sel_index = 1
+if (_sel_index > n)       _sel_index = n
+if (_start_index > size - _sel_index)
+{
+    _start_index = size - _sel_index
+}
+for (i=0; i<n; i+=1)
+{
+    _temp_str = ds_list_find_value(items,i+_start_index)
+    if string_width(_temp_str) > ((width_item-6)-(x_move))
+    {
+        for (j=string_length(_temp_str); j>=0;j-=1)
+        {
+            _temp = string_copy(_temp_str,0,j)
+            if (string_width(_temp+"...") <= ((width_item-6)-(x_move)))
+            {
+                _temp_str = _temp+"..."
+                break
+            }
+        }
+        
+    }
+    draw_text_color(x+3+x_move,y+(i*height_item)+y_move,_temp_str, text_color, text_color, text_color, text_color, text_alpha)
+}
+if (focus == 1)
+{
+    draw_set_color(make_color_rgb(59,59,59))
+    draw_set_alpha(0.60)
+}
+else
+{
+    draw_set_color(make_color_rgb(59,59,59))
+    draw_set_alpha(0.30)
+}
+draw_rectangle(x+x_move,y+y_move+(_sel_index*height_item)-height_item,x+width_item-1,y+y_move+(_sel_index*height_item)-1,0)

@@ -1,0 +1,38 @@
+/*#INDEX# =======================================================================================================================
+; Title .........:      Change Item From List Box.
+; GameMaker Version :   8+
+; Language ......:      English
+; Description ...:      ---
+; Author(s) .....:      eManF
+; Parameters .......:   (obj ListBox, int Index, Value)
+; ===============================================================================================================================*/
+
+ListBox = argument0
+Index   = argument1
+Value   = argument2
+
+// Check Error
+if (is_string(ListBox) == 0) and instance_exists(ListBox)
+{
+    with(ListBox)
+    {
+        if variable_local_exists("control_type")   // Check object variable for type is Exist or not.
+        {
+            if (control_type != "ListBox")   // Check is real ListBox Object or Not.
+            {
+                return -3;
+            }
+        }
+        else
+        { 
+            return -2;
+        }
+    }
+}
+else
+{
+    return -1;
+}
+
+ds_list_replace(ListBox.items,Index,Value)
+return 1;

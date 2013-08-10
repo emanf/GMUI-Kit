@@ -1,0 +1,12 @@
+/// Enter Effect
+if (_enter == 0) exit;
+
+_enter_alpha += 0.05
+if (_enter_alpha > 1)
+{
+    _enter_alpha = 1
+}
+else
+{
+    alarm[0] = 1
+}

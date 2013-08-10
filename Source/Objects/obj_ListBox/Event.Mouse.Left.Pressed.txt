@@ -1,0 +1,22 @@
+/// Set Focus and Select Item.
+focus = 1;
+//_x = mouse_x - x
+_y = mouse_y - y
+
+if (show_number > size)
+{
+    n = size
+}
+else
+{
+    n = show_number
+}
+for (i=0; i<n; i+=1)
+{
+    if (_y >= i*height_item+y_move) and (_y <= (i+1)*height_item+y_move-1)
+    {
+        _sel_index = i+1
+        exit;
+    }
+}
+listbox_update(id)

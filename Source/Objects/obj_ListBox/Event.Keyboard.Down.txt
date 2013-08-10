@@ -1,0 +1,25 @@
+/// Move To Down in ListBox
+if (focus)
+{
+    if (key_on)
+    {
+        key_on = false
+        _sel_index += 1
+        if (show_number > size)
+        {
+            n = size
+        }
+        else
+        {
+            n = show_number
+        }
+        if (_sel_index > n)
+        {
+            _sel_index = n
+            if (_start_index < size-n) _start_index+=1
+        }
+        alarm[0] = delay
+    }
+}
+
+listbox_update(id)

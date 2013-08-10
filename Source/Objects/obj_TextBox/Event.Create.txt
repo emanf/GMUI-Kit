@@ -1,0 +1,27 @@
+/// Properties
+control_type = "TextBox"     // Don't Change
+_caret = ''                  // Variable Use in Script. Don't Change
+_ch = 0                      // Variable Use in Script. Don't Change
+
+// Font
+font = -1               // Sets the font. Use -1 to set the default font (Arial 12).
+font_halign = fa_left   // Sets the horizontal alignment. Choose one of: fa_left , fa_center , fa_right
+font_valign = fa_top    // Sets the vertical alignment. Choose one of: fa_top , fa_middle , fa_bottom 
+
+// Set Font
+draw_set_font(font)
+draw_set_halign(font_halign)
+draw_set_valign(font_valign)
+
+// ChangeAble
+caret_char = "|"
+focus = 0
+text = "Put Your Text Here!"
+text_color = c_white
+text_alpha = 0.5
+text_limit = 60
+text_width_limit = 390
+x_move = 5
+y_move = 5
+
+alarm[0] = 15           // Caret Changer.

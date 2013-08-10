@@ -1,0 +1,33 @@
+/// Check Hit
+if (mouse_x > x and mouse_x < x + sprite_width + string_width(text)+ x_move) and (mouse_y > y and mouse_y < y + sprite_height+ y_move -1)
+{
+    _enter = 1
+}
+else
+{
+    _enter = 0
+}
+
+if (_enter == 1)
+{
+    if mouse_check_button_pressed(mb_left)
+    {
+        _press = 1
+    }
+    if (_press == 1)
+    {
+        image_index = 1
+        if !mouse_check_button(mb_left)
+        {
+            _press = 0
+        }
+    }
+}
+else
+{
+    image_index = 0
+}
+if mouse_check_button_released(mb_left)
+{
+    _press = 0
+}

@@ -1,0 +1,25 @@
+/// Draw Lable
+if (text != "")
+{
+    draw_set_font(font)
+    draw_set_halign(font_halign)
+    draw_set_valign(font_valign)
+    _temp_str = text
+    if (text_width_limit > 0 )
+    {
+        if (string_width(_temp_str) > text_width_limit)
+        {
+            for (j=string_length(_temp_str); j>=0;j-=1)
+            {
+                _temp = string_copy(_temp_str,0,j)
+                if (string_width(_temp+"...") <= text_width_limit)
+                {
+                    _temp_str = _temp+"..."
+                    break
+                }
+            }
+        }
+    }
+    draw_text_color(x,y,_temp_str,text_color,text_color,text_color,text_color,text_alpha)
+    //draw_rectangle(x,y,x+string_width(_tempStr),y+string_height(_tempStr),1)  //Border
+}

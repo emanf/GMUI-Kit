@@ -1,0 +1,18 @@
+/// Move To Up in ListBox
+if (focus)
+{
+    if (key_on)
+    {
+        key_on = false
+        _sel_index -= 1
+        if (_sel_index < 1)
+        {
+            _sel_index = 1
+            if (_start_index > 0) _start_index-=1
+        }
+        alarm[0] = delay
+    }
+    
+}
+
+listbox_update(id)

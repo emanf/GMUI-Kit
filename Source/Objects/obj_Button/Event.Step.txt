@@ -1,0 +1,44 @@
+/// Check Enter or Leave
+if collision_point(mouse_x,mouse_y,id,0,0)
+{
+    _enter = 1
+}
+else
+{
+    _enter = 0
+    if (_enter_alpha != 0) and (alarm[1] != 1)
+    {
+        alarm[1] = 1
+    } 
+}
+
+if (_enter == 1)
+{
+    if mouse_check_button_pressed(mb_left)
+    {
+        _press = 1
+    }
+    if (_press == 1)
+    {
+        image_index = 2
+        if !mouse_check_button(mb_left)
+        {
+            _press = 0
+        }
+    }
+    else
+    {
+        if (_enter_alpha != 1) and (alarm[0] != 1) 
+        {
+            alarm[0] = 1
+        }
+    }
+}
+else
+{
+    image_index = 0
+}
+if mouse_check_button_released(mb_left)
+{
+    _press = 0
+}

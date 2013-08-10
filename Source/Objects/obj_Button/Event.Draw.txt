@@ -1,0 +1,18 @@
+///Draw Skin and Text
+draw_sprite(sprite_index,0,x,y)                                 // Draw Default Sprite(Skin)
+draw_sprite_ext(sprite_index,1,x,y,1,1,0,c_white,_enter_alpha)   // Draw Skin When Mouse Entered
+if (_enter == 1) and (_press == 1)      // Check Clicked?
+{
+    //Enter_Alpha = 0
+    draw_sprite(sprite_index,2,x,y)     // Draw Sprite(Skin) When Mouse Clicked
+}
+
+// Check Variable Text and Draw in Center of Sprite
+if (text != "")
+{
+    draw_set_font(font)
+    draw_set_halign(font_halign)
+    draw_set_valign(font_valign)
+    draw_text_color(x+(sprite_width/2)-(string_width(text)/2),y+(sprite_height/2)-(string_height(text)/2),text,text_color,text_color,text_color,text_color,text_alpha)
+    
+}

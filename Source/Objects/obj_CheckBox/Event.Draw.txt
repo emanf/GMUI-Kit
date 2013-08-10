@@ -1,0 +1,30 @@
+/// Draw CheckBox
+if (!checked)
+{
+    draw_sprite(sprite_index,0,x,y)
+    
+    if (_enter == 1) and (_press == 1)
+    {
+        //Enter_Alpha = 0
+        draw_sprite(sprite_index,1,x,y)
+    }
+}
+else
+{
+    draw_sprite(sprite_index,2,x,y)
+    if (_enter == 1) and (_press == 1)
+    {
+        //Enter_Alpha = 0
+        draw_sprite(sprite_index,3,x,y)
+    }
+}
+
+if (text != "")
+{
+    draw_set_font(font)
+    draw_set_halign(font_halign)
+    draw_set_valign(font_valign)
+    draw_text_color(x+sprite_width+x_move,y+(sprite_height - string_height(text))/2+y_move,text,text_color,text_color,text_color,text_color,text_alpha)
+    
+}
+//draw_rectangle(x,y,x + sprite_width + string_width(Text)+ xMove,y + sprite_height + yMove-1,1)  // Hit Border.
