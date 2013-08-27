@@ -8,13 +8,20 @@ Interface control components for Game Maker(http://yoyogames.com/)
 
 How To Use?
 ===========
-1. Run GM8.1/GM:S
+<b>GameMaker 8.1</b>
+1. Run GM8.1
 2. go to: File > Import Resources... > SELECT "GMUI-Kit.gmres" > Open.
 3. Check "Place new resources in new group".
 4. Click on "OK".
 5. go to "Objects" directory and Copy how many control u need.
 6. Use and Enjoy.
 
+<b>GameMaker:Studio</b>
+1. Run GMS
+2. go to Import Tab.
+3. Import GMUI-Kit.gmz
+5. go to "Objects" directory and Copy how many control u need.
+6. Use and Enjoy.
 
 List of Control in Last Version:
 ================================
