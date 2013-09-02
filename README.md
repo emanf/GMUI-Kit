@@ -2,6 +2,8 @@ GMUI-Kit
 ========
 
 Interface control components for Game Maker(http://yoyogames.com/)
+<br>
+<b>HTML5 Example:</b> http://emanf.3owl.com/gmui-kit/beta/ex-0.2.1/
 <img src="Version%200.2(Beta)/screen-shot.png">
 <br>
 <b>License:</b> GPL v3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
