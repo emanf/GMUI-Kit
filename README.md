@@ -37,9 +37,9 @@ Button:(Property)
 <br><code><b>font</b></code>            // (Font). Sets the font. Use -1 to set the default font (Arial 12)
 <br><code><b>font_halign</b></code>     // Sets the horizontal alignment. Choose one of: fa_left , fa_center , fa_right
 <br><code><b>font_valign</b></code>     // Sets the vertical alignment. Choose one of: fa_top , fa_middle , fa_bottom
-<br><code><b>owner</b></code>                      //can be a obj_Window or obj_Panel or noone
-<br><code><b>x_owner</b></code>                    //child x on owner
-<br><code><b>y_owner</b></code>                    //child y on owner
+<br><code><b>owner</b></code>                      // can be a obj_Window or obj_Panel or noone
+<br><code><b>x_owner</b></code>                    // child x on owner
+<br><code><b>y_owner</b></code>                    // child y on owner
 
 CheckBox:(Property)
 ===================
@@ -55,9 +55,9 @@ CheckBox:(Property)
 <br><code><b>checked</b></code>          // ture or false
 <br><code><b>x_move</b></code>           // Left Margin for Text.
 <br><code><b>y_move</b></code>           // Top  Margin for Text.
-<br><code><b>owner</b></code>                      //can be a obj_Window or obj_Panel or noone
-<br><code><b>x_owner</b></code>                    //child x on owner
-<br><code><b>y_owner</b></code>                    //child y on owner
+<br><code><b>owner</b></code>                      // can be a obj_Window or obj_Panel or noone
+<br><code><b>x_owner</b></code>                    // child x on owner
+<br><code><b>y_owner</b></code>                    // child y on owner
 
 Label:(Property)
 ================
@@ -71,9 +71,9 @@ Label:(Property)
 <br><code><b>font_halign</b></code>          // Sets the horizontal alignment. Choose one of: fa_left , fa_center , fa_right
 <br><code><b>font_valign</b></code>          // Sets the vertical alignment. Choose one of: fa_top , fa_middle , fa_bottom
 <br><code><b>text_width_limit</b></code>     // Set Limit Width For Label. Example: set 50 ("TestTestTestTest" -> "TestTes...")
-<br><code><b>owner</b></code>                      //can be a obj_Window or obj_Panel or noone
-<br><code><b>x_owner</b></code>                    //child x on owner
-<br><code><b>y_owner</b></code>                    //child y on owner
+<br><code><b>owner</b></code>                      // can be a obj_Window or obj_Panel or noone
+<br><code><b>x_owner</b></code>                    // child x on owner
+<br><code><b>y_owner</b></code>                    // child y on owner
 
 TextBox:(Property)
 ==================
@@ -92,9 +92,9 @@ TextBox:(Property)
 <br><code><b>font</b></code>                 // (Font). Sets the font. Use -1 to set the default font (Arial 12)
 <br><code><b>font_halign</b></code>          // Sets the horizontal alignment. Choose one of: fa_left , fa_center , fa_right
 <br><code><b>font_valign</b></code>          // Sets the vertical alignment. Choose one of: fa_top , fa_middle , fa_bottom
-<br><code><b>owner</b></code>                          //can be a obj_Window or obj_Panel or noone
-<br><code><b>x_owner</b></code>                        //child x on owner
-<br><code><b>y_owner</b></code>                        //child y on owner
+<br><code><b>owner</b></code>                          // can be a obj_Window or obj_Panel or noone
+<br><code><b>x_owner</b></code>                        // child x on owner
+<br><code><b>y_owner</b></code>                        // child y on owner
 <br><code><b>skin_sprite</b></code>                    // set noone to draw default sprite(sprite_index);
 <br><code><b>skin_back_color</b></code>                // set background color if u use skin.
 
@@ -118,9 +118,9 @@ ListBox:(Property, Function)
 <br><code><b>font_valign</b></code>            // Sets the vertical alignment. Choose one of: fa_top , fa_middle , fa_bottom
 <br><code><b>x_move</b></code>                 // Left and Right Margin for Text.
 <br><code><b>y_move</b></code>                 // Top and Bottom Margin for Text.
-<br><code><b>owner</b></code>                            //can be a obj_Window or obj_Panel or noone
-<br><code><b>x_owner</b></code>                          //child x on owner
-<br><code><b>y_owner</b></code>                          //child y on owner
+<br><code><b>owner</b></code>                            // can be a obj_Window or obj_Panel or noone
+<br><code><b>x_owner</b></code>                          // child x on owner
+<br><code><b>y_owner</b></code>                          // child y on owner
 <br><code><b>skin_sprite</b></code>                      // set noone to draw default sprite(sprite_index);
 <br><code><b>skin_back_color</b></code>                  // set background color if u use skin.
 
@@ -137,14 +137,14 @@ Panel:(Property, Function)
 <br><code><b>control_type</b></code>              // Don't Change.(ReadOnly)
 br><code><b>control_width</b></code>              // (ReadOnly)
 <br><code><b>control_height</b></code>            // (ReadOnly)
-<br><code><b>owner</b></code>                     //can be a obj_Window or obj_Panel or noone
-<br><code><b>x_owner</b></code>                   //child x on owner
-<br><code><b>y_owner</b></code>                   //child y on owner
+<br><code><b>owner</b></code>                     // can be a obj_Window or obj_Panel or noone
+<br><code><b>x_owner</b></code>                   // child x on owner
+<br><code><b>y_owner</b></code>                   // child y on owner
 <br><code><b>gap</b></code>                       // gap between childs
 <br><code><b>childs_width</b></code>              // width of childs
 <br><code><b>childs_height</b></code>             // height of childs
 <br><code><b>item_scale_mode</b></code>           // true or false, if true: childs_width and childs_height changed to bigget width and height of childs.
-<br><code><b>item_alignment</b></code>            //Choose one of: ALIGNMENT_HORIZONTAL, ALIGNMENT_BOTH, ALIGNMENT_VERTICAL
+<br><code><b>item_alignment</b></code>            // Choose one of: ALIGNMENT_HORIZONTAL, ALIGNMENT_BOTH, ALIGNMENT_VERTICAL
 <br><code><b>border_show</b></code>
 <br><code><b>border_color</b></code>
 <br><code><b>border_width</b></code>
@@ -157,12 +157,12 @@ br><code><b>control_width</b></code>              // (ReadOnly)
 Window:(Property)
 =================
 <br><code><b>control_type</b></code>           // Don't Change.(ReadOnly)
-br><code><b>control_width</b></code>           // (ReadOnly)
+<br><code><b>control_width</b></code>          // (ReadOnly)
 <br><code><b>control_height</b></code>         // (ReadOnly)
-<br><code><b>drag_x</b></code>                 //x1 of Drag Area(Rectangle)
-<br><code><b>drag_y</b></code>                 //x2 of Drag Area(Rectangle)
-<br><code><b>drag_width</b></code>             //width of Drag Area(Rectangle)
-<br><code><b>drag_height</b></code>            //height of Drag Area(Rectangle)
+<br><code><b>drag_x</b></code>                 // x1 of Drag Area(Rectangle)
+<br><code><b>drag_y</b></code>                 // x2 of Drag Area(Rectangle)
+<br><code><b>drag_width</b></code>             // width of Drag Area(Rectangle)
+<br><code><b>drag_height</b></code>            // height of Drag Area(Rectangle)
 <br><code><b>skin_sprite</b></code>            // set noone to draw default sprite(sprite_index);
 <br><code><b>skin_back_color</b></code>        // set background color if u use skin.
 <br><code><b>skin_header_height</b></code>     // set header height to window
