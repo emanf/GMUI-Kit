@@ -211,6 +211,7 @@ for (i=0; i&lt;=num_in_ver-1; i++)
         _num +=1
         if _num&gt;size break;
         child = ds_list_find_value(childs,_num-1)
+        if (child == noone) continue
         child.x_owner = _x+(j*childs_width)
         child.y_owner = _y+(i*childs_height)
         child.visible = true
