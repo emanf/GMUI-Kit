@@ -137,7 +137,7 @@ Panel:(Property, Function)
 ==========================
 <b>Property:</b>
 <br><code><b>control_type</b></code>              // Don't Change.(ReadOnly)
-br><code><b>control_width</b></code>              // (ReadOnly)
+<br><code><b>control_width</b></code>             // (ReadOnly)
 <br><code><b>control_height</b></code>            // (ReadOnly)
 <br><code><b>owner</b></code>                     // can be a obj_Window or obj_Panel or noone
 <br><code><b>x_owner</b></code>                   // child x on owner
