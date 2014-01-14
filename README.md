@@ -80,9 +80,9 @@ Label:(Property)
 TextBox:(Property)
 ==================
 <br><code><b>control_type</b></code>         // Don't Change.(ReadOnly)
-<br><code><b>control_width                   // (ReadOnly)
-<br><code><b>control_height                  // (ReadOnly)
-<br><code><b>text</b></code>                 // (String)
+<br><code><b>control_width</b></code>        // (ReadOnly)
+<br><code><b>control_height</b></code>       // (ReadOnly)
+<br><code><b>text</b></code></b></code>      // (String)
 <br><code><b>text_color</b></code>           // (Color)
 <br><code><b>text_alpha</b></code>           // (Number) between 0-1
 <br><code><b>caret_char</b></code>           // Caret Char. Example: "|"
@@ -162,7 +162,7 @@ Window:(Property)
 <br><code><b>control_width</b></code>          // (ReadOnly)
 <br><code><b>control_height</b></code>         // (ReadOnly)
 <br><code><b>drag_x</b></code>                 // x1 of Drag Area(Rectangle)
-<br><code><b>drag_y</b></code>                 // x2 of Drag Area(Rectangle)
+<br><code><b>drag_y</b></code>                 // y1 of Drag Area(Rectangle)
 <br><code><b>drag_width</b></code>             // width of Drag Area(Rectangle)
 <br><code><b>drag_height</b></code>            // height of Drag Area(Rectangle)
 <br><code><b>skin_sprite</b></code>            // set noone to draw default sprite(sprite_index);
